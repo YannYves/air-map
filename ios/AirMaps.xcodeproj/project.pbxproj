@@ -104,6 +104,7 @@
 		1125B2F01C4AD445007D0023 /* SMCalloutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMCalloutView.h; path = AirMaps/Callout/SMCalloutView.h; sourceTree = SOURCE_ROOT; };
 		1125B2F11C4AD445007D0023 /* SMCalloutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMCalloutView.m; path = AirMaps/Callout/SMCalloutView.m; sourceTree = SOURCE_ROOT; };
 		11FA5C511C4A1296003AC2EE /* libAirMaps.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAirMaps.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F0CA162A1CE1C300D55F40 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
 		19DABC7D1E7C9D3C00F41150 /* RCTConvert+AirMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+AirMap.h"; sourceTree = "<group>"; };
 		19DABC7E1E7C9D3C00F41150 /* RCTConvert+AirMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+AirMap.m"; sourceTree = "<group>"; };
 		2163AA4E1FEAEDD100BBEC95 /* AIRMapPolylineRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRMapPolylineRenderer.h; sourceTree = "<group>"; };
@@ -127,7 +128,6 @@
 		8B19A3C52257BBDE00BB8735 /* AIRMapCalloutSubviewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRMapCalloutSubviewManager.h; sourceTree = "<group>"; };
 		8B19A3C62257BBDF00BB8735 /* AIRMapCalloutSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIRMapCalloutSubview.h; sourceTree = "<group>"; };
 		8B19A3C72257BBDF00BB8735 /* AIRMapCalloutSubviewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIRMapCalloutSubviewManager.m; sourceTree = "<group>"; };
-		8BC85FAD2107C0BD0006CEA5 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
 		8BC85FAE2107CFD80006CEA5 /* AIRGoogleMapOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIRGoogleMapOverlay.h; path = AirGoogleMaps/AIRGoogleMapOverlay.h; sourceTree = "<group>"; };
 		8BC85FAF2107CFEC0006CEA5 /* AIRGoogleMapOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AIRGoogleMapOverlay.m; path = AirGoogleMaps/AIRGoogleMapOverlay.m; sourceTree = "<group>"; };
 		9B9498A42017EFB400158761 /* AIRGoogleMapCallout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIRGoogleMapCallout.h; path = AirGoogleMaps/AIRGoogleMapCallout.h; sourceTree = "<group>"; };
@@ -198,11 +198,11 @@
 		11FA5C481C4A1296003AC2EE = {
 			isa = PBXGroup;
 			children = (
+				17F0CA162A1CE1C300D55F40 /* User.xcconfig */,
 				9B9498A32017EF9D00158761 /* AirGoogleMaps */,
 				62AEC4D31FD5A0AA003225E0 /* AIRMapLocalTileOverlay.m */,
 				11FA5C531C4A1296003AC2EE /* AirMaps */,
 				11FA5C521C4A1296003AC2EE /* Products */,
-				8BC85FAD2107C0BD0006CEA5 /* User.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -239,7 +239,6 @@
 				1125B2C91C4AD3DA007D0023 /* AIRMapManager.h */,
 				1125B2CA1C4AD3DA007D0023 /* AIRMapManager.m */,
 				1125B2CB1C4AD3DA007D0023 /* AIRMapMarker.h */,
-				1125B2CC1C4AD3DA007D0023 /* AIRMapMarker.m */,
 				1125B2CD1C4AD3DA007D0023 /* AIRMapMarkerManager.h */,
 				1125B2CE1C4AD3DA007D0023 /* AIRMapMarkerManager.m */,
 				1125B2CF1C4AD3DA007D0023 /* AIRMapPolygon.h */,
@@ -359,20 +358,22 @@
 		11FA5C491C4A1296003AC2EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = Christopher;
 				TargetAttributes = {
 					11FA5C501C4A1296003AC2EE = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 89V9U3ZXL4;
 					};
 				};
 			};
 			buildConfigurationList = 11FA5C4C1C4A1296003AC2EE /* Build configuration list for PBXProject "AirMaps" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 11FA5C481C4A1296003AC2EE;
 			productRefGroup = 11FA5C521C4A1296003AC2EE /* Products */;
@@ -452,17 +453,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -485,7 +498,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -496,17 +509,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -523,7 +548,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -532,13 +557,13 @@
 		};
 		11FA5C5B1C4A1296003AC2EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC85FAD2107C0BD0006CEA5 /* User.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 89V9U3ZXL4;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -547,13 +572,13 @@
 		};
 		11FA5C5C1C4A1296003AC2EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8BC85FAD2107C0BD0006CEA5 /* User.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 89V9U3ZXL4;
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/../../react-native/React/**",
 					"$(SRCROOT)/../../react-native/Libraries/Image",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
